@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# My To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web para gerenciar uma lista de tarefas. A aplicação é construída com React, TypeScript e TailwindCSS.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **TypeScript**: Um superset do JavaScript que adiciona tipos estáticos.
+- **TailwindCSS**: Um framework CSS utilitário para criar designs personalizados rapidamente.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Adicionar, editar e remover tarefas.
+- Marcar tarefas como concluídas.
+- Layout responsivo.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalação
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone o repositório:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+  ```bash
+  git clone https://github.com/seu-usuario/my-todo-app.git
+  ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd my-todo-app
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. Inicie o servidor:
+   ```bash
+   npm start
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Contribuição
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nome-da-feature`)
+3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`)
+4. Faça o push para a branch (`git push origin feature/nome-da-feature`)
+5. Abra um Pull Request
