@@ -2,6 +2,10 @@
 
 Este projeto é uma aplicação web para gerenciar uma lista de tarefas. A aplicação é construída com React, TypeScript e TailwindCSS.
 
+## Deploy
+
+Você pode acessar a aplicação através do seguinte link: [Link do Deploy](https://my-todo-app-three-henna.vercel.app/)
+
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construir interfaces de usuário.
