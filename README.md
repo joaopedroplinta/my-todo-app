@@ -19,7 +19,7 @@ Este projeto é uma aplicação web para gerenciar uma lista de tarefas. A aplic
 1. Clone o repositório:
 
   ```bash
-  git clone https://github.com/seu-usuario/my-todo-app.git
+  git clone https://github.com/joaopedroplinta/my-todo-app.git
   ```
 2. Navegue até o diretório do projeto:
    ```bash
