@@ -17,12 +17,14 @@ const TodoItem: React.FC<TodoItemProps> = ({
 }) => {
   return (
     <li
-      className={`flex justify-between items-center p-2 border-b ${
-        completed ? "bg-green-100 line-through" : "bg-gray-50"
+      className={`flex flex-wrap justify-between items-center p-2 border-b last:border-b-0 ${
+        completed ? "bg-green-100" : "bg-gray-50"
       }`}
     >
-      <span>{text}</span>
-      <div className="flex space-x-2">
+      <span className={`break-words max-w-full sm:max-w-xs ${completed ? "line-through" : ""}`}>
+        {text}
+      </span>
+      <div className="flex space-x-2 mt-2 sm:mt-0">
         <button className="text-blue-500" onClick={() => onToggleComplete(id)}>
           {completed ? "Desfazer" : "Completo"}
         </button>
