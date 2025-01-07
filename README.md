@@ -35,7 +35,7 @@ Você pode acessar a aplicação através do seguinte link: [Link do Deploy](htt
    ```
 4. Inicie o servidor:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Contribuição
